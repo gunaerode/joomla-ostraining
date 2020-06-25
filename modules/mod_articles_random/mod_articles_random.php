@@ -5,14 +5,8 @@
  */
 defined('_JEXEC') or die;
 
-$catid = $params->get("catid");
-$count = $params->get('count');
+require_once __DIR__ . "/helper.php";
 
-echo "<pre>";
+$articles = ModArticlesRandomHelper::getArticles($params);
 
-print_r($catid);
-echo $count;
-
-?>
-<h1>Hello buddy</h1>
-<p>This is for new users</p>
+require JModuleHelper::getLayoutPath('mod_articles_random', $params->get('layout', 'default'));

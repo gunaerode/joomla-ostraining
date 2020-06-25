@@ -11,6 +11,7 @@
     <description>MOD_ARTICLES_RANDOM_XML_DESCRIPTION</description>
     <files>
         <filename module="mod_articles_random">mod_articles_random.php</filename>
+        <folder>tmpl</folder>
     </files>
     <languages>
     </languages>

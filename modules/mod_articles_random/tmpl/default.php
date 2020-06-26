@@ -13,7 +13,7 @@ $js = <<<JS
         var catids = $(this).data('categories'),
             count = $(this).data('count'),
             request = {
-                'option' : 'com_ajax',
+                'option' : 'com_ajax', // Calling com_ajax module automatically call the helper function in the getAjax() function - Note
                 'module' : 'articles_random',
                 'format' : 'json',
                 'catids' : catids,

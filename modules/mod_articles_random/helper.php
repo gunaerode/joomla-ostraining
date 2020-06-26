@@ -38,7 +38,7 @@ abstract class ModArticlesRandomHelper
         return $articles;
     }
 
-    public function getAjax() // This function will be automatically known by joomla to load
+    public function getAjax() // This function will be automatically known by joomla to load - called automatically from com_ajax
     {
         $app = JFactory::getApplication();
 

@@ -11,9 +11,12 @@
     <description>MOD_ARTICLES_RANDOM_XML_DESCRIPTION</description>
     <files>
         <filename module="mod_articles_random">mod_articles_random.php</filename>
+        <filename>helper.php</filename>
         <folder>tmpl</folder>
     </files>
     <languages>
+        <language tag="en-GB">en-GB.mod_articles_random.ini</language>
+        <language tag="en-GB">en-GB.mod_articles_random.sys.ini</language>
     </languages>
     <config>
         <fields name="params">
@@ -21,7 +24,7 @@
                 <field name="catid" type="category" label="JCATEGORY" description="MOD_ARTICLES_RANDOM" extention="com_content" multple="true" default="">
                     <option value="">JOPTION_ALL_CATEGORIES</option>
                 </field>
-                <field name="count" type="text" label="MOD_ARTICLES_RANDOM_COUNT_LABEL" default="5" description="MOD_ARTICLES_COUNT_DESCRITPION" />
+                <field name="count" type="text" label="MOD_ARTICLES_RANDOM_COUNT_LABEL" default="5" description="MOD_ARTICLES_RANDOM_COUNT_DESCRIPTION" />
             </fieldset>
         </fields>
     </config>

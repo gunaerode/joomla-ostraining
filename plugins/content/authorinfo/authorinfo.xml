@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.6" type="plugin" group="content" method="upgrade">
+    <name>plg_content_authorinfo</name>
+    <author>Cory Webb</author>
+    <creationDate>Jun 26, 2020</creationDate>
+    <copyright>Copyright (C) 2020 Guna. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <authorEmail>guna.learn2016@gmail.com</authorEmail>
+    <authorUrl>www.corywebbmedia.com</authorUrl>
+    <version>0.0.1</version>
+    <description>PLG_CONTENT_AUTHORINFO_XML_DESCRIPTION</description>
+    <files>
+        <filename plugin="authorinfo">authorinfo.php</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">en-GB.plg_content_authorinfo.ini</language>
+        <language tag="en-GB">en-GB.plg_content_authorinfo.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="cat_include"
+                    type="category"
+                    extension="com_content"
+                    multiple="true"
+                    label="PLG_CONTENT_AUTHORINFO_CATEGORY_INCLUDE_LABEL"
+                    description="PLG_CONTENT_AUTHORINFO_CATEGORY_INCLUDE_DESC" />
+                <field
+                    name="cat_exclude"
+                    type="category"
+                    extension="com_content"
+                    multiple="true"
+                    label="PLG_CONTENT_AUTHORINFO_CATEGORY_EXCLUDE_LABEL"
+                    description="PLG_CONTENT_AUTHORINFO_CATEGORY_EXCLUDE_DESC" />
+                <field
+                    name="custom_text"
+                    type="text"
+                    label="PLG_CONTENT_AUTHORINFO_CUSTOM_TEXT_LABEL"
+                    description="PLG_CONTENT_AUTHORINFO_CUSTOM_TEXT_DESC"
+                    default="" />
+                <field
+                    name="display"
+                    type="checkboxes"
+                    label="PLG_CONTENT_AUTHORINFO_DISPLAY_LABEL"
+                    description="PLG_CONTENT_AUTHORINFO_DISPLAY_DESC">
+                    <option value="tag">{author_info} Tag</option>
+                    <option value="before">PLG_CONTENT_AUTHORINFO_BEFORE</option>
+                    <option value="after">PLG_CONTENT_AUTHORINFO_AFTER</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

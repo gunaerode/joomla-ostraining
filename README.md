@@ -17,3 +17,4 @@
     </languages>
     ```
 - [Joomla plugin](https://docs.joomla.org/Plugin/Events) -  Create plugin events
+- [Joomla Access.xml](https://docs.joomla.org/Adding_ACL_rules_to_your_component)
